@@ -1,0 +1,1 @@
+function wwaplugin_bindEntryClick(e){e(".entry-event").each(function(){var t=e(this);t.click(function(){var e=t.next("tr.entry-description");e.fadeToggle("fast","linear")})})}function updateQueryStringParam(e,t,n){var r=new RegExp("([?|&])"+t+"=.*?(&|$)","i"),i=e.indexOf("?")!==-1?"&":"?";if(e.match(r)){return e.replace(r,"$1"+t+"="+n+"$2")}else{return e+i+t+"="+n}}
